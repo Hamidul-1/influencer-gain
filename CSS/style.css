@@ -8,10 +8,13 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
+
 /* common css */
 
 nav{
     display: flex;
+    margin-bottom: 150px;
     justify-content: space-between;
     height: 80px;
     align-items: center;
@@ -20,6 +23,7 @@ nav{
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
+    
 }
 .highlight{
     color: #FF008E;
@@ -27,22 +31,41 @@ nav{
 .primary-button{
     outline: 0;
     border: 0;
-    padding: 5px 20px;
-    background-color: #f155ab;
-    border-radius: 50px;
-    color: white;
-    /* background-image: #FF008E; */
-    /* color: #fff; */
-    /* font-size: 18px;
+    padding: 15px 20px;
+    background-image: linear-gradient(90deg, #FF008E,#5f0d3a);
+    color: #fff;
+    font-size: 18px;
     text-transform: uppercase;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 7px 0 #47062a;
     position: relative;
-    top: 0; */
+    top: 0;
+}
+.click{
+    background-color: #E02C6D;
+    border: none;
+    color:#FFFFFF;
+    font-size: 17px;
+    width: 170px;
+    height: 44px;
+    padding: 8px;
+    border-radius: 20px;
+}
+.seemore{   
+    color:#E02C6D;
+    display: block;
+    text-align: right;   
 }
 .section-title{
     text-align: center;
+}
+.section-title h2{
+    font-size: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 2px solid #47062a;
+    margin: 50px 0;
 }
 nav{
     display: flex;
@@ -71,7 +94,8 @@ nav{
     grid-template-columns: 1fr 1fr;
 }
 .section-left{
-    align-items: center;
+    
+    align-items:center;
 }
 
 /* Feature part css */
@@ -80,12 +104,13 @@ nav{
     gap: 10px;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
+    
 }
 .card{
     width: 300px;
     padding: 30px;
-    margin: 0 auto;
-    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+    margin: 20px auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,.1);
 }
 .card img{
     width: 100%;   
@@ -101,10 +126,74 @@ nav{
     color: #FFC014;
 }
 .course-duration{
-    background-color:lightpink;
+    background-color:#E02C6D;
     border-radius: 10px;
 }
 span{
-    
     color: rgb(82, 74, 74);
+    gap: 20px;
+}
+
+/* Contact part */
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.section-title{
+
+}
+.contact-left img{
+    width: 100%;
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid #FF008E;
+}
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button{
+    background-position-y: top;
+}
+
+/*Last-one*/
+.last {
+    background-color: black;
+    text-align: center;
+
+}
+
+h2 {
+    color: rgb(221, 129, 129);
+}
+
+footer {
+    color: white;
+}
+
+
+.color {
+    color: white;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    color: white;
+    
 }
