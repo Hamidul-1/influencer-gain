@@ -25,6 +25,7 @@ nav{
     padding: 30px;
     
 }
+
 .highlight{
     color: #FF008E;
 }
@@ -51,6 +52,9 @@ nav{
     height: 44px;
     padding: 8px;
     border-radius: 20px;
+}
+.click:hover{
+    background-color: rgb(226, 114, 62);
 }
 .seemore{   
     color:#E02C6D;
@@ -202,9 +206,9 @@ footer {
     .container{
         width: 100%;
     }
-    .container, .section, .feature, .contact{
+    .section, .feature, .contact{
         grid-template-columns: repeat(1, 1fr);
-        align-content: center;
+        grid-row-gap: 30px;
         justify-items: center;
     } 
 }
@@ -214,14 +218,14 @@ footer {
     .container{
         width: 100%;
     }
-    .section, .con, .contact{
+    .section, .contact{
         grid-template-columns: repeat(1, 1fr);
-        align-content: center;
+        grid-row-gap: 30px;
         justify-items: center;
     } 
     .feature{
         grid-template-columns: repeat(2, 1fr);
-        align-content: center;
+        grid-row-gap: 30px;
         justify-items: center;
     }
 
