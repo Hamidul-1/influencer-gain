@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* common css */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+.highlight{
+    color: #FF008E;
+}
+.primary-button{
+    outline: 0;
+    border: 0;
+    padding: 5px 20px;
+    background-color: #f155ab;
+    border-radius: 50px;
+    color: white;
+    /* background-image: #FF008E; */
+    /* color: #fff; */
+    /* font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 7px 0 #47062a;
+    position: relative;
+    top: 0; */
+}
+.section-title{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation li{
+    list-style: none; 
+    margin: 10px;
+}
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 15px 10px;
+}
+.section{
+    height: calc(100vh-80px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.section-left{
+    align-items: center;
+}
+
+/* Feature part css */
+.feature{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    padding: 30px;
+    margin: 0 auto;
+    box-shadow: 0 30px 35px rgba(0,0,0,.2);
+}
+.card img{
+    width: 100%;   
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star-half-alt{
+    font-size: 12px;
+    color: #FFC014;
+}
+.course-duration{
+    background-color:lightpink;
+    border-radius: 10px;
+}
+span{
+    
+    color: rgb(82, 74, 74);
+}
