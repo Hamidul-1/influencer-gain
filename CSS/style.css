@@ -140,9 +140,6 @@ span{
     grid-template-columns: 1fr 1fr;
     gap: 30px;
 }
-.section-title{
-
-}
 .contact-left img{
     width: 100%;
 }
@@ -195,5 +192,38 @@ footer {
     gap: 20px;
     justify-content: center;
     color: white;
-    
 }
+
+/* Media Queries */
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .container, .section, .feature, .contact{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-items: center;
+    } 
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .section, .con, .contact{
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
+        justify-items: center;
+    } 
+    .feature{
+        grid-template-columns: repeat(2, 1fr);
+        align-content: center;
+        justify-items: center;
+    }
+
+}
+
